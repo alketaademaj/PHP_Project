@@ -38,7 +38,7 @@ require '../Config.php';
 
     else {
         mysqli_select_db($conn,'localdb');
-        $retval = mysqli_query($conn,$sql,);
+        $retval = mysqli_query($conn,$sql);
        
         echo "User registered Succesfully.";
         echo "<a href=../WebPage.php>Back to the mainpage</a>";
