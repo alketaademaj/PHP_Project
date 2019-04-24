@@ -1,7 +1,7 @@
 <?php
 // Fetching server data
 $servername = '';
-$dbname = 'database';
+$dbname = 'localdb';
 $username = '';
 $password = '';
  
