@@ -48,7 +48,7 @@ else  {
         echo "Artist already exists";
         mysqli_select_db($conn,'localdb');
         $retval = mysqli_query($conn,$sql,);
-        $kappaval = mysqli_query($conn,$sql2,);
+        $kappaval = mysqli_query($conn,$sql2);
         echo "Only Album was added";
     }
 
