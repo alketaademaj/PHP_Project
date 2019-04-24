@@ -46,7 +46,7 @@ if ($art == '' or $alb == '') {
 else  {
     if (mysqli_num_rows($res) > 0) {
         echo "Artist already exists";
-        mysqli_select_db($conn,'database');
+        mysqli_select_db($conn,'localdb');
         $retval = mysqli_query($conn,$sql,);
         $kappaval = mysqli_query($conn,$sql2,);
         echo "Only Album was added";
@@ -54,7 +54,7 @@ else  {
 
     else {
         echo "Artist Doesn't Exist.";
-        mysqli_select_db($conn,'database');
+        mysqli_select_db($conn,'localdb');
         $retval = mysqli_query($conn,$sql,);
         $yeetval = mysqli_query($conn,$sql1);
         $kappaval = mysqli_query($conn,$sql2,);
