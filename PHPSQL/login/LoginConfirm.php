@@ -31,7 +31,7 @@ session_start();
 
     //Query the Database for User
     $query = "SELECT * FROM user WHERE userName = '$Username' and userPassword = '$Password';";
-        mysqli_select_db($conn,'database');
+        mysqli_select_db($conn,'localdb');
         $result = mysqli_query($conn,$query);
         $row = mysqli_fetch_array($result);
         if (isset($_POST["uname"]) && isset($_POST["psw"])) {
