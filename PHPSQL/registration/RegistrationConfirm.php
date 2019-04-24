@@ -22,7 +22,7 @@ require '../Config.php';
     $Userq = "SELECT * FROM User WHERE (`userName` = '$User');";
     $Emailq = "SELECT * FROM User WHERE (`userEMail` = '$Email');";
 
-    mysqli_select_db($conn,'database');
+    mysqli_select_db($conn,'localdb');
     $ret = mysqli_query($conn,$Userq);
     $reet = mysqli_query($conn,$Emailq);
 
@@ -37,7 +37,7 @@ require '../Config.php';
     }
 
     else {
-        mysqli_select_db($conn,'database');
+        mysqli_select_db($conn,'localdb');
         $retval = mysqli_query($conn,$sql,);
        
         echo "User registered Succesfully.";
