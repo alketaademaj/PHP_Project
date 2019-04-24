@@ -27,7 +27,7 @@ else  {
         $album = "DELETE FROM album WHERE (`albumName` LIKE '%".$alb."%');";
         $album1 = "DELETE FROM album_artist WHERE (`albumName` LIKE '%".$alb."%');";
 
-        mysqli_select_db($conn,'database');
+        mysqli_select_db($conn,'localdb');
         $res=mysqli_query($conn,$album);
         $rees=mysqli_query($conn,$album1);
         echo"Album deleted succesfully";
