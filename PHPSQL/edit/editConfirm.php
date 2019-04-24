@@ -20,7 +20,7 @@ $alb = $_GET['album'];
 
 $infoEdit = "UPDATE album_artist SET info = '$info' WHERE albumName = '$alb';";
 
-mysqli_select_db($conn,'database');
+mysqli_select_db($conn,'localdb');
 $res=mysqli_query($conn,$infoEdit);
 echo "The info was updated.";
 ?>
